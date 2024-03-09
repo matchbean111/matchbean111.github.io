@@ -2,32 +2,36 @@
 <head>
     <title>Title</title>
     <style>
-        div{
-            width: 800px;
-            height: 100px;
-            background-color: #e6add9;
-            color: rgba(116, 43, 226, 0.98);
-            font-family: Monaco;
-            font-size: 22px;
-            justify-content: center;
-            
-        }
+
         p{
             justify-content: center;
             /*color: blueviolet;*/
+        }
+
+        @keyframes blingAnimation {
+            0% { text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff; }
+            50% { text-shadow: 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff; }
+            100% { text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff; }
+        }
+
+        .bling-text {
+            font-size: 48px;
+            font-weight: bold;
+            color: #ffff00;
+            animation: blingAnimation 2s infinite;
         }
     </style>
 </head>
 <body>
 <div>
-    <p>
+    <p class="bling-text">
         I love you,and you love me.
         This is a paragraph
         <strong>Hello,darling</strong>
     </p>
 </div>
 <div>
-    <p>
+    <p class="bling-text">
         I love you,and you love me.
         This is a paragraph
         <strong>Hello,darling</strong>
